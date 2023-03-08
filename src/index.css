@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.container{
+  max-width:960px;
+  margin-right:auto;
+  margin-left:auto;
+  padding-right:15px;
+  padding-left:15px;
+  min-height:100vh;
+}
+.notes-list{
+  display:grid;
+  grid-gap:1rem;
+  grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+  margin-bottom: 10%;
+}
+.newNote{
+  background-color:#67d7cc;
+  border-radius:10px;
+  padding:1rem;
+  min-height:170px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+textarea{
+  border:none;
+  resize:none;
+  background-color:#67d7cc;
+}
+textarea:focus{
+  outline:none;
+}
+.remain{
+  margin-top:10%;
+  margin-left:1%;
+  /* margin-right: 10px; */
+
+}
+.save{
+  margin-top:10%;
+  margin-left:45%;
+  border:none;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+}
+.save:hover{
+  cursor:pointer;
+  color: rgb(6, 231, 6);
+}
+.notes{
+  background-color:#fef68a;
+  border-radius:10px;
+  padding:1rem;
+  min-height:170px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  white-space:pre-wrap;
+}
+.note-footer{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+}
+
+.delete-icon:hover{
+  color:red;
+  cursor:pointer;
+}
+
+.search{
+  display:flex;
+  align-items: center;
+  background-color:rgb(233,233,233);
+  border-radius: 10px;
+  padding:5px;
+  margin-bottom:1.5em;
+}
+.search input{
+  background-color:rgb(233,233,233);
+  width:100%;
+  border:none;
+}
+.search input:focus{
+  outline:none;
+}
+.header{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+}
+.toggle{
+  border:none;
+  border-radius:10px;
+  height:5vh;
+}
+.toggle:hover{
+  color:red;
+  background: black;
+  font-weight:bold;
+}
+.dark-mode{
+  background-color:black;
+}
+.dark-mode h1{
+  color:white;
+}
